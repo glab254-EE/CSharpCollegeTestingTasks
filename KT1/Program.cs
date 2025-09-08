@@ -6,13 +6,24 @@ namespace _25KT1_IntArrayList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            IntArrayList list1 = new IntArrayList();
+            IntArrayList list2 = new IntArrayList(1);
+            Console.WriteLine(list1.Capacity.ToString() + " " + list1.Count.ToString());
+            list1.PushBack(5);
+            list1.PushBack(10);
+            list1.PushBack(6);
+            Console.WriteLine(list1.Capacity.ToString()+" "+ list1.Count.ToString());
+            Console.WriteLine(list1.Array);
+            list1.PopBack();
+            Console.WriteLine(list1.Array);
+            list1.Clear();
+            Console.WriteLine(list1.Array);
         }
     }
     public class IntArrayList
     {
         private int buffer;
-        private int[] Array;
+        public int[] Array; // забыл сделать публичным.
         private int bufferCount
         {
             get
@@ -25,7 +36,15 @@ namespace _25KT1_IntArrayList
         {
             get
             {
-                return Array.Length;
+                int outp = 0;
+                for (int i = 0; i < Array.Length; i++)
+                {
+                    if (Array[i] != 0)
+                    {
+                        outp++;
+                    }
+                }
+                return outp;
             }
         }
         public int Capacity
