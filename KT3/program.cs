@@ -38,20 +38,20 @@ namespace _25_KT3
             Circle<double> circle3 = new Circle<double>(3.2);
             Circle<float> circle4 = new Circle<float>(2.4f);
 
-            Console.WriteLine($"Circle1 area: {circle1.GetArea()}");
-            Console.WriteLine($"Circle2 area: {circle2.GetArea()}");
-            Console.WriteLine($"Circle3 area: {circle3.GetArea()}");
-            Console.WriteLine($"Circle4 area: {circle4.GetArea()}");
+            Console.WriteLine($"Circle1 area: {circle1.GetArea()}. Radius {circle1.radius}");
+            Console.WriteLine($"Circle2 area: {circle2.GetArea()}. Radius {circle2.radius}");
+            Console.WriteLine($"Circle3 area: {circle3.GetArea()}. Radius {circle3.radius}");
+            Console.WriteLine($"Circle4 area: {circle4.GetArea()}. Radius {circle4.radius}");
 
             circle1.SetRadius(15);
             circle2.SetRadius("17");
             circle3.SetRadius(0.7);
             circle4.SetRadius(69.07f);
 
-            Console.WriteLine($"Circle1 area: {circle1.GetArea()}");
-            Console.WriteLine($"Circle2 area: {circle2.GetArea()}");
-            Console.WriteLine($"Circle3 area: {circle3.GetArea()}");
-            Console.WriteLine($"Circle4 area: {circle4.GetArea()}");
+            Console.WriteLine($"Circle1 area: {circle1.GetArea()}. Radius {circle1.radius}");
+            Console.WriteLine($"Circle2 area: {circle2.GetArea()}. Radius {circle2.radius}");
+            Console.WriteLine($"Circle3 area: {circle3.GetArea()}. Radius {circle3.radius}");
+            Console.WriteLine($"Circle4 area: {circle4.GetArea()}. Radius {circle4.radius}");
             //KT4-5
             Rectangle<int, string> rectangle1 = new Rectangle<int, string>(2, "4");
             Rectangle<double, float> rectangle2 = new Rectangle<double, float>(new Vector2(1.5f,2.5f),3.3, 2.5f);
